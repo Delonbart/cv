@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="pt-4 pb-4 text-muted text-center d-print-none">
       <div className="container">
         <div className="my-3">
-          <div className="h4">Delon Puiya</div>
+          <div className="h4">{footer.Footer1}</div>
           <div className="footer-nav">
             <nav role="navigation">
               <ul className="nav justify-content-center">
@@ -27,7 +27,7 @@ const Footer = () => {
                     title="Facebook"
                   >
                     <i className="fab fa-facebook" />
-                    <span className="menu-title sr-only">Facebook</span>
+                    <span className="menu-title sr-only">{footer.Footer2}</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -37,7 +37,7 @@ const Footer = () => {
                     title="Instagram"
                   >
                     <i className="fab fa-instagram" />
-                    <span className="menu-title sr-only">Instagram</span>
+                    <span className="menu-title sr-only">{footer.Footer3}</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -47,7 +47,7 @@ const Footer = () => {
                     title="Github"
                   >
                     <i className="fab fa-github" />
-                    <span className="menu-title sr-only">Github</span>
+                    <span className="menu-title sr-only">{footer.Footer4}</span>
                   </a>
                 </li>
               </ul>
@@ -55,11 +55,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-small">
-          <div className="mb-1">© Right Resume. All rights reserved.</div>
+          <div className="mb-1">{footer.Footer5}</div>
           <div>
-            Design -{" "}
+          {footer.Footer6}{" "}
             <a href="https://templateflip.com/" target="_blank">
-              TemplateFlip
+            {footer.Footer7}
             </a>
           </div>
         </div>
