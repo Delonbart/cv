@@ -100,7 +100,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>{skills.skills}</span>
+            <span>{skills.skills7}</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-success"
