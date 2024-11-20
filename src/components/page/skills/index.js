@@ -14,11 +14,11 @@ const Skills = () => {
   }, []);
   return (
     <div className="skills-section px-3 px-lg-4">
-      <h2 className="h3 mb-3">Basic Skills</h2>
+      <h2 className="h3 mb-3">{skills.skills1}</h2>
       <div className="row">
         <div className="col-md-6">
           <div className="mb-2">
-            <span>HTML</span>
+            <span>{skills.skills2}</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-primary"
@@ -34,7 +34,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>kanva</span>
+            <span>{skills.skills3}</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-primary"
@@ -50,7 +50,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>JavaScript</span>
+            <span>{skills.skills4}</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-primary"
@@ -68,7 +68,7 @@ const Skills = () => {
         </div>
         <div className="col-md-6">
           <div className="mb-2">
-            <span>MYSQL</span>
+            <span>{skills.skills5}</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-success"
@@ -84,7 +84,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>github</span>
+            <span>{skills.skills6}</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-success"
@@ -100,7 +100,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>Draw.io</span>
+            <span>{skills.skills}</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-success"
