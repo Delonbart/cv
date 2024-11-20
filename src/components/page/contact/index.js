@@ -77,7 +77,7 @@ const Contact = () => {
               <div className="mb-2">
                 <div className="text-dark">
                   <i className="fab fa-facebook mr-1" />
-                  <span></span>
+                  <span>https://www.facebook.com/delon.bart.1?mibextid=ZbWKwL</span>
                 </div>
               </div>
               <div className="mb-2">
@@ -89,7 +89,7 @@ const Contact = () => {
               <div className="mb-2">
                 <div className="text-dark">
                   <i className="fab fa-github mr-1" />
-                  <span>https://github.com/account</span>
+                  <span>https://github.com/Delonbart</span>
                 </div>
               </div>
             </div>

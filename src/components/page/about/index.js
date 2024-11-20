@@ -16,37 +16,37 @@ const About = () => {
     <div className="about-section pt-4 px-3 px-lg-4 mt-1">
       <div className="row">
         <div className="col-md-6">
-          <h2 className="h3 mb-3">About Me</h2>
+          <h2 className="h3 mb-3">{about.about1}</h2>
           <p>
-          Hello, I am Delon, currently studying at Universitas Klabat (UNKLAB), majoring in Information Systems (IS).
+          {about.about2}
           </p>
         </div>
         <div className="col-md-5 offset-md-1">
           <div className="row mt-2">
             <div className="col-sm-4">
-              <div className="pb-1">Age</div>
+              <div className="pb-1">{about.about3}</div>
             </div>
             <div className="col-sm-8">
-              <div className="pb-1 text-secondary">20</div>
+              <div className="pb-1 text-secondary">{about.about4}</div>
             </div>
             <div className="col-sm-4">
-              <div className="pb-1">Email</div>
+              <div className="pb-1">{about.about5}</div>
             </div>
             <div className="col-sm-8">
-              <div className="pb-1 text-secondary">delonbart77@gmail.com</div>
+              <div className="pb-1 text-secondary">{about.about6}</div>
             </div>
             <div className="col-sm-4">
-              <div className="pb-1">Phone</div>
+              <div className="pb-1">{about.about7}</div>
             </div>
             <div className="col-sm-8">
-              <div className="pb-1 text-secondary">+62 82195146313</div>
+              <div className="pb-1 text-secondary">{about.about8}</div>
             </div>
             <div className="col-sm-4">
-              <div className="pb-1">Address</div>
+              <div className="pb-1">{about.about9}</div>
             </div>
             <div className="col-sm-8">
               <div className="pb-1 text-secondary">
-                universitas klabat
+              {about.about10}
               </div>
             </div>
           </div>

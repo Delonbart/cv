@@ -43,7 +43,7 @@ const Footer = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    href="https://github.com/account"
+                    href="https://github.com/Delonbart"
                     title="Github"
                   >
                     <i className="fab fa-github" />
