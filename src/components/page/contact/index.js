@@ -14,7 +14,7 @@ const Contact = () => {
     }, []);  
   return (
     <div className="contant-section px-3 px-lg-4 pb-4" id="contact">
-      <h2 className="h3 text mb-3">Contact</h2>
+      <h2 className="h3 text mb-3">{contact.contact1}</h2>
       <div className="row">
         <div className="col-md-7 d-print-none">
           <div className="my-2">
@@ -54,21 +54,21 @@ const Contact = () => {
                 />
               </div>
               <button className="btn btn-primary mt-2" type="submit">
-                Send
+              {contact.contact2}
               </button>
             </form>
           </div>
         </div>
         <div className="col">
           <div className="mt-2">
-            <h3 className="h6">Address</h3>
+            <h3 className="h6">{contact.contact3}</h3>
             <div className="pb-2 text-secondary">
-              Unklab
+            {contact.contact4}
             </div>
-            <h3 className="h6">Phone</h3>
-            <div className="pb-2 text-secondary">+62 82195146313</div>
-            <h3 className="h6">Email</h3>
-            <div className="pb-2 text-secondary">delonbart77@gmal.com</div>
+            <h3 className="h6">{contact.contact5}</h3>
+            <div className="pb-2 text-secondary">{contact.contact6}</div>
+            <h3 className="h6">{contact.contact}</h3>
+            <div className="pb-2 text-secondary">{contact.contact7}</div>
           </div>
         </div>
         <div className="col d-none d-print-block">
@@ -77,19 +77,19 @@ const Contact = () => {
               <div className="mb-2">
                 <div className="text-dark">
                   <i className="fab fa-facebook mr-1" />
-                  <span>https://www.facebook.com/delon.bart.1?mibextid=ZbWKwL</span>
+                  <span>{contact.contact8}</span>
                 </div>
               </div>
               <div className="mb-2">
                 <div className="text-dark">
                   <i className="fab fa-instagram mr-1" />
-                  <span>https://www.instagram.com/invites/contact/?igsh=1gek2a69pxchd&utm_content=27tytlw</span>
+                  <span>{contact.contact9}</span>
                 </div>
               </div>
               <div className="mb-2">
                 <div className="text-dark">
                   <i className="fab fa-github mr-1" />
-                  <span>https://github.com/Delonbart</span>
+                  <span>{contact.contact10}</span>
                 </div>
               </div>
             </div>
