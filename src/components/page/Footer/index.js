@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
 
-const Header = () => {
-  const [header, setHeader] = useState({});
+const Footer = () => {
+  const [footer, setFooter] = useState({});
 
   useEffect(() => {
     const db = getDatabase();
-    const headerRef = ref(db, "header");
-    onValue(headerRef, (snapshot) => {
+    const footerRef = ref(db, "footer");
+    onValue(footerRef, (snapshot) => {
       const data = snapshot.val();
-      setHeader(data);
+      setFooter(data);
     });
   }, []);
   return (
-    <header className="d-print-none">
-      <div className="container text-center text-lg-left">
-        <div className="py-3 clearfix">
-          <h1 className="site-title mb-0">{header.header1}</h1>
-          <div className="site-nav">
+    <footer className="pt-4 pb-4 text-muted text-center d-print-none">
+      <div className="container">
+        <div className="my-3">
+          <div className="h4">Delon Puiya</div>
+          <div className="footer-nav">
             <nav role="navigation">
               <ul className="nav justify-content-center">
                 <li className="nav-item">
@@ -27,7 +27,7 @@ const Header = () => {
                     title="Facebook"
                   >
                     <i className="fab fa-facebook" />
-                    <span className="menu-title sr-only">{header.header2}</span>
+                    <span className="menu-title sr-only">Facebook</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -54,9 +54,18 @@ const Header = () => {
             </nav>
           </div>
         </div>
+        <div className="text-small">
+          <div className="mb-1">© Right Resume. All rights reserved.</div>
+          <div>
+            Design -{" "}
+            <a href="https://templateflip.com/" target="_blank">
+              TemplateFlip
+            </a>
+          </div>
+        </div>
       </div>
-    </header>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;

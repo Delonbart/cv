@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
 
 const Skills = () => {
+  const [skills, setSkills] = useState({});
+
+  useEffect(() => {
+    const db = getDatabase();
+    const skillsRef = ref(db, "footer");
+    onValue(skillsRef, (snapshot) => {
+      const data = snapshot.val();
+      setSkills(data);
+    });
+  }, []);
   return (
     <div className="skills-section px-3 px-lg-4">
-      <h2 className="h3 mb-3">Professional Skills</h2>
+      <h2 className="h3 mb-3">Basic Skills</h2>
       <div className="row">
         <div className="col-md-6">
           <div className="mb-2">
@@ -23,7 +34,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>CSS</span>
+            <span>kanva</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-primary"
@@ -57,7 +68,7 @@ const Skills = () => {
         </div>
         <div className="col-md-6">
           <div className="mb-2">
-            <span>Adobe Photoshop</span>
+            <span>MYSQL</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-success"
@@ -73,7 +84,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>Sketch</span>
+            <span>github</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-success"
@@ -89,7 +100,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="mb-2">
-            <span>Adobe XD</span>
+            <span>Draw.io</span>
             <div className="progress my-1">
               <div
                 className="progress-bar bg-success"
