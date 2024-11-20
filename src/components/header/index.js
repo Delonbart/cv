@@ -37,7 +37,7 @@ const Header = () => {
                     title="Instagram"
                   >
                     <i className="fab fa-instagram" />
-                    <span className="menu-title sr-only">Instagram</span>
+                    <span className="menu-title sr-only">{header.header3}</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -47,7 +47,7 @@ const Header = () => {
                     title="Github"
                   >
                     <i className="fab fa-github" />
-                    <span className="menu-title sr-only">Github</span>
+                    <span className="menu-title sr-only">{header.header4}</span>
                   </a>
                 </li>
               </ul>
